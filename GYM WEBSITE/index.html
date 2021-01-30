@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Gym</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/fitness-wallpaper-5-1.jpg');
+        height: 500px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(13);
+    }
+
+    .mid {
+        /* border: 2px solid red; */
+        display: block;
+        width: 53%;
+        margin: 29px auto;
+    }
+
+    .right {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        margin: 29px auto;
+        /* size: 50px; */
+
+    }
+
+    .btn {
+        background-color: transparent;
+        font-size: 30px;
+        color: white;
+        padding: 2px 4px;
+        border-radius: 10px;
+        border: 2px solid grey;
+    }
+
+    .btn:hover {
+        background-color: rgb(152, 247, 10);
+        cursor: pointer;
+        color: blue;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+        font-size: 28px;
+    }
+
+    .navbar li a:hover {
+        color: grey;
+
+        font-size: 32px;
+
+    }
+
+    .left img {
+        width: 308px;
+        filter: invert(13);
+        height: 80px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .left img:hover {
+        cursor: pointer;
+        filter: invert(100);
+    }
+
+    .container {
+        text-align: center;
+        border: 2px solid white;
+        margin: 102px 138px;
+        padding: 41px 86px;
+        width: 39%;
+        display: block;
+        border-radius: 31px;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 2px auto;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 557px;
+        padding: 0px;
+        margin: 33px auto;
+        font-size: 33px;
+        border-radius: 15px;
+    }
+
+    
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/Impossible-Fitness-transparent-background1.png" alt="">
+            <!-- <div>ankita fitness</div> -->
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">Fitness Calculator</a> </li>
+                <li> <a href="#">Contact us</a> </li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now!</button>
+            <button class="btn">Email Us!</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Mumbai today</h1>
+        <form action="noaction.php">
+            <!-- no backend for now -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
